@@ -5,13 +5,13 @@ public class InstanceTest {
     public static void main(String[] args){
 
     //학생 선언
-    Student student1 = new Student(pSchoolName: "School", pClassYear:1, pClassroomNum:3, pStudentNum:20, pName:"Bob", pGender:"Male");//디폴트생성자 선언
-
-      //class, string, array > 참조형은 default값: null,,,, int 기본값 > 0
-    System.out.println(student1.name);
-    System.out.println(student1.gender); //null 로 나옴
-    System.out.println(student1.studentNumber); //0
-
+//    Student student1 = new Student(pSchoolName: "School", pClassYear:1, pClassroomNum:3, pStudentNum:20, pName:"Bob", pGender:"Male");//디폴트생성자 선언
+//
+//      //class, string, array > 참조형은 default값: null,,,, int 기본값 > 0
+//    System.out.println(student1.name);
+//    System.out.println(student1.gender); //null 로 나옴
+//    System.out.println(student1.studentNumber); //0
+//
 
     Student student2 = new Student();
     student2.name = "Alice";
