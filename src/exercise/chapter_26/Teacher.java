@@ -18,4 +18,16 @@ public class Teacher {
         String studentName = student.name;
         System.out.println("선생: %s 학생에서 %s 과목을 가르치고 있습니다.\n");
     }
+    //오버로드 하기 전 하나 만을어야 함
+    Teacher(){}
+    Teacher(String pName, String pGender, String pSubjectName, String pSubjectCode){
+        name = pName;
+        gender = pGender;
+
+        Subject newSubject = new Subject();
+        newSubject.subjectName = schoolName;
+        newSubject.subjectCode = pSubjectCode;
+
+        subject = newSubject;
+    }
 }

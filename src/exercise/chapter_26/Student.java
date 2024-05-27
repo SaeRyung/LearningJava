@@ -20,8 +20,12 @@ public class Student {
     //생성자 추가
     Student(){
     }//기본 생성자 원래 있었지만 보이지 않았다. 정의
+    Student(String pName, String pGender){ //생성자 여러개
+        name = pName;
+        gender = pGender;
+    }
 
-
+//
     Student(String pSchoolName, int pClassYear, int pClassroomNum, int pStudentNum, String pName, String pGender) {//파라미터 넣어주기
         //생성자 만들 시에 이곳으로 전달
         schoolName = pSchoolName;
