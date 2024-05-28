@@ -27,4 +27,10 @@ public class Coffee {
         //기본값으로. 포장여부는 함수
         isWrappedUp = false;
     }
+
+    //getter, coffeeName에 추가
+
+    public String getCoffeeName() {
+        return coffeeName;
+    }
 }
