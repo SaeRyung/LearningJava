@@ -50,7 +50,7 @@ public class Cashier {
     }
 
     //3. 돈을 더한다.
-    public void addAmount(int money){
+    public void addAmount(long money){
         //내 돈에서 더하는 행위
         this.salesAmount += money;
     }

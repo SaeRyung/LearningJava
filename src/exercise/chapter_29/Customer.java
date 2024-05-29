@@ -37,6 +37,10 @@ public class Customer {
         this.myFeeling = "기분이 좋아졌다.";
     }
 
+    public void showMyInfo(){
+        System.out.printf("손님: 지금 나의 기분은 %s 합니다. 현금은 %d 있습니다.", this.myFeeling, this.cashAmount);
+    }
+
     //CoffeeShopSituation,,,,generage > setter 클릭 / setter추가
     public void setCashAmount(long cashAmount) {
         this.cashAmount = cashAmount;

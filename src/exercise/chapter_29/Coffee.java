@@ -33,4 +33,10 @@ public class Coffee {
     public String getCoffeeName() {
         return coffeeName;
     }
+
+    //getter
+
+    public boolean isWrappedUp() {
+        return isWrappedUp;
+    }
 }
