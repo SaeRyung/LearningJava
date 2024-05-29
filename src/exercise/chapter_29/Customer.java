@@ -38,7 +38,7 @@ public class Customer {
     }
 
     public void showMyInfo(){
-        System.out.printf("손님: 지금 나의 기분은 %s 합니다. 현금은 %d 있습니다.", this.myFeeling, this.cashAmount);
+        System.out.printf("손님: 지금 나의 기분은 %s 합니다. 남은 현금은 %d 원 있습니다.", this.myFeeling, this.cashAmount);
     }
 
     //CoffeeShopSituation,,,,generage > setter 클릭 / setter추가

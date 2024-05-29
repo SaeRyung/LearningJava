@@ -19,7 +19,7 @@ public class Cashier {
     //행위
     //1. 커피 가격 확인해준다.
     public long checkCoffeePrice(String coffeeName) {
-        long price;
+        long price; //초기값 0
         switch (coffeeName) {
             case "아메리카노":
                 price = 5000;
