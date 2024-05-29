@@ -71,4 +71,9 @@ public class Cashier {
         String coffeeName = coffee.getCoffeeName();
         System.out.println("캐시어: 주문하신 커피"+coffeeName + "나왔습니다.");
     }
+
+    //setter추가 _ private 사용 위해
+    public void setSalesAmount(long salesAmount) {
+        this.salesAmount = salesAmount;
+    }
 }

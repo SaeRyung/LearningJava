@@ -37,5 +37,8 @@ public class Customer {
         this.myFeeling = "기분이 좋아졌다.";
     }
 
-
+    //CoffeeShopSituation,,,,generage > setter 클릭 / setter추가
+    public void setCashAmount(long cashAmount) {
+        this.cashAmount = cashAmount;
+    }
 }
