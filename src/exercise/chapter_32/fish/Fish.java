@@ -64,7 +64,7 @@ public class Fish {
     
     //super default 생성자
     Fish(){
-        System.out.println("부모 물고기가 만들어지고 있습니다.");
+
     }
 
     //generate > construct

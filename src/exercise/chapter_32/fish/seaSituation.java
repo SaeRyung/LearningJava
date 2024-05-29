@@ -25,10 +25,13 @@ public class seaSituation {
 //        fishChild.printMyInfo();
 
 //자식 물고기 생성
-        FishChild fishChild = new FishChild();
-        fishChild.setLeavingSea("동해");
-        fishChild.setLeavingSeaChild("서해");
+//        FishChild fishChild = new FishChild();
+//        fishChild.setLeavingSea("동해");
+//        fishChild.setLeavingSeaChild("서해");
+//
+//        fishChild.printSea();
 
-        fishChild.printSea();
+        //핵심 타입
+        //묵시적 형 변환
     }
 }

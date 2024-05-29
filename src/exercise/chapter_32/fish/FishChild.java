@@ -41,11 +41,6 @@ public class FishChild extends Fish {
     }
 
 
-    @Override
-    String myInfo() {
-        //오버라이드 하여 기존값 살리며 값을 추가
-        return super.myInfo() + "는 부모 물고기," + String.format("자식 물고기(eatable=%b, leavingSea=%s)", this.eatable, this.leavingSea);
-    }
 
     //setter
     public void setLeavingSeaChild(String leavingSeaChild) {
@@ -54,9 +49,7 @@ public class FishChild extends Fish {
 
     //default생성자
     FishChild(){
-
-        //super(); 자동으로 추가되어잇다. 먼저 실행됌 : 부모 물고기가 만들어지고 있습니다.
-        System.out.println("자식 물고기가 생성되고 있습니다.");
+        super(); //자동으로 추가되어잇다. 먼저 실행됌 : 부모 물고기가 만들어지고 있습니다.
     }
 
 
