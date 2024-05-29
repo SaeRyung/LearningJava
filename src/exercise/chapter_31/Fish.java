@@ -3,17 +3,19 @@ package exercise.chapter_31;
 public class Fish {
     //속성
     private String sex; //"Male", "Female"
-    private boolean havingPoison; // true 독 있다, false 독 없다
+    protected boolean havingPoison; // true 독 있다, false 독 없다
     private String startSpawningDate; //산란시작시간
     private String endSpawningDate; //산란 종료시간
     String leavingSea; //사는 속성
 
     //행위
 
+    //override
     //반환값 없을때 void 정의. 메소드 이름 eat
     void eat(String food){
-        System.out.printf("나, 물고기는 %s를 먹고 있습니다.\n", food);
+        System.out.printf(myInfo() + " 물고기는 %s를 먹고 있습니다.\n", food);
     };
+
     void swim(int meter){
         System.out.println("나는 헤엄칩니다 미터: " + meter );
     }
@@ -51,5 +53,10 @@ public class Fish {
 
     public void setLeavingSea(String leavingSea) {
         this.leavingSea = leavingSea;
+    }
+
+    //getter
+    public boolean isHavingPoison() {
+        return havingPoison;
     }
 }

@@ -12,12 +12,20 @@ public class SeaSituation {
         fish2.setLeavingSea("서해");
         fish2.setHavingPoison(false);
 
-        fish1.printMyInfo();
-        fish2.printMyInfo();
+//        fish1.printMyInfo();
+//        fish2.printMyInfo();
+//
+//        fish2.digging();
+//        fish2.setEatable(true);
 
-        fish2.digging();
-        fish2.setEatable(true);
+        //오버라이딩
+        fish2.becomeDanger();
+        System.out.println("독성여부: " + fish2.isHavingPoison());
 
-        System.out.println(fish2.isEatable());
+        fish1.eat("새우");
+        fish2.eat("새우");
+
+
+//        System.out.println(fish2.isEatable());
     }
 }
