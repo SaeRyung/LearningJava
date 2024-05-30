@@ -1,18 +1,17 @@
 package exercise.chapter_34;
 
-public class VIPCustomer {
+public class VIPCustomer extends Customer {
 
-    //default 접근제어자 static
-    static int numberID = 1;
-
-    //속성
-    private String customerID; //고객 ID
-    private String customerName; //고객 이름
-    private String customerGrade; //고객 등급
-
-
-    private int bonusPoint; //보너스 포인트
-    private double saveRatio; //포인트 적립 비율
+//    //default 접근제어자 static
+//    static int numberID = 1;
+//
+//    //속성
+//부모클래스 이어받음
+    //고객ID
+    //고객이름
+    //고객등급
+    //보너스 포인트
+    //적립비율
 
 
     private String chargeVIP; //VIP 담당 직원 ID
@@ -21,11 +20,15 @@ public class VIPCustomer {
 
     //행위
     //1. 돈을지불한다
+    //오버라이드 추가
+    @Override
     public int payment(int price){
         this.bonusPoint += price * saveRatio;
         price -= price * discountRate;
         return price;
     }
+
+
 
     //2. vip 담당 직원을 부른다.
     public void callChargeVIP(){
@@ -36,6 +39,7 @@ public class VIPCustomer {
     //참고
 
     public VIPCustomer(String customerName){
+        super();
         this.customerID = "VIP" + numberID++;
         this.customerName = customerName;
         this.customerGrade = "VIP";
@@ -50,9 +54,11 @@ public class VIPCustomer {
     }
 
     //출력 위한 메소드
+    @Override
     void printMyInfo(){
-        System.out.printf("VIPCustomer(customerID = %s, name = %s, customerGrade = %s, bonusPoint =%s )\n"
-                , this.customerID, this.customerName, this.customerGrade, this.bonusPoint);
+        //VIP만 붙고 결과 출력
+        System.out.print("VIP");
+        super.printMyInfo();
     }
 
 
