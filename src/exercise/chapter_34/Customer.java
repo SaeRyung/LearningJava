@@ -17,7 +17,7 @@ public class Customer {
     //1. 돈을 지불한다
     public int payment(int price){
 
-        this.bonusPoint += price * bonusPoint;
+        this.bonusPoint += price * saveRatio;
         return price;
     }
 

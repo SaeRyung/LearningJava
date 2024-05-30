@@ -7,7 +7,6 @@ public class DepartmentSituation {
         Staff staff = new Staff();
         staff.setAllSales(1_000_000);
 
-        VIPCustomer vipCustomer = new VIPCustomer("나영희");
 
 
         //손님 줄>배열
@@ -15,7 +14,8 @@ public class DepartmentSituation {
         Customer[] customerQueue = {
                 new Customer("권율"), new Customer("이순신"), new VIPCustomer("광해군"),
                 new VIPCustomer("아이유"), new Customer("김좌진"),new VIPCustomer("아이유"),
-                new VIPCustomer("아이유"), new Customer("안유진"),new VIPCustomer("김혜수")
+                new VIPCustomer("아이유"), new Customer("안유진"),new VIPCustomer("김혜수"),
+                new GoldCustomer("정우성"), new GoldCustomer("손흥민")
         };
 
         //단골손님
