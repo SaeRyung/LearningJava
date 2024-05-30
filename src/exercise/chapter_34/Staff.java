@@ -10,10 +10,10 @@ public class Staff {
         return customer.payment(price);
 
     }
-    //직원이 결제 도와드리겠습니다.
-    public int helpPayment(VIPCustomer customer, int price){
-        return customer.payment(price);
-    }
+//    //직원이 결제 도와드리겠습니다.
+//    public int helpPayment(VIPCustomer customer, int price){
+//        return customer.payment(price);
+//    }
 
     //2. 매상에 돈을 더한다.
     public void Income(int cash){
@@ -31,4 +31,6 @@ public class Staff {
     public void setAllSales(int allSales) {
         AllSales = allSales;
     }
+
+
 }
