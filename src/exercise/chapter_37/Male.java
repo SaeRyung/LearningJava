@@ -2,17 +2,17 @@ package exercise.chapter_37;
 
 
 //한사람 여러개 롤 가지기 가능, 클래스와추상클래스는 하나만 상속 가능, implements 여러개 가능
-public class Male implements HusbandRole, DaddyRole, EmployeeRole{
-    private String name;
+public class Male extends FamilyMan implements FamilyRole, EmployeeRole{
+    protected String name;
     private int age;
     private String job;
 
-    @Override
-    public void educateBaby(Baby baby) {
-        String name = baby.getName();
-        System.out.println(name + " 아기를 열심히 교육하고 있습니다.");
+//    @Override
+//    public void educateBaby(Baby baby) {
+//        String name = baby.getName();
+//        System.out.println(name + " 아기를 열심히 교육하고 있습니다.");
 
-    }
+//    }
 ///////////////////////////////////////////////
     @Override
     public void workTogether(EmployeeRole employeeRole) {
@@ -27,19 +27,26 @@ public class Male implements HusbandRole, DaddyRole, EmployeeRole{
         return this.name;
     }
 ////////////////////////////////////////////////
-    @Override
-    public void takeCareWife(Wife wife) {
-        String name = wife.getName();
-        System.out.println(name + "인 아내를 성심성의껏 케이합니다.");
+//    @Override
+//    public void takeCareWife(Wife wife) {
+//        String name = wife.getName();
+//        System.out.println(name + "인 아내를 성심성의껏 케이합니다.");
 
-    }
+//    }
 
-    @Override
-    public void sayLoveEvery() {
-        System.out.println("우리 가족 사랑합니다");
+    //상위인터페이스에 디폴트를 호출하여
+//    @Override
+//    public void sayLoveEvery() {
+//        DaddyRole.super.sayLoveEvery(); //우리 아기 사랑합니다
+//        HusbandRole.super.sayLoveEvery(); //우리 아내 사랑합니다
+//    }
 
-
-    }
+//    @Override
+//    public void sayLoveEvery() {
+//        System.out.println("우리 가족 사랑합니다");
+//
+//
+//    }
 
 
     //////생성자 추가

@@ -24,9 +24,9 @@ public class InterfaceTest {
 
         //회사원
         EmployeeRole maleEmployeeRole = (EmployeeRole) maleDaddy;
-        EmployeeRole femaleEmployee = new Female("김채원");
+        EmployeeRole maleEmployeeTwo = new MaleTwo("민철");
 
-        maleEmployeeRole.workTogether(femaleEmployee);
+        maleEmployeeRole.workTogether(maleEmployeeTwo);
 
     }
 }
