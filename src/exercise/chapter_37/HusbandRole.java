@@ -4,4 +4,6 @@ public interface HusbandRole {
 
     void takeCareWife(Wife wife);
     void sayLoveEvery();
+
+    String getName();
 }

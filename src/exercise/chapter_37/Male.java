@@ -38,5 +38,13 @@ public class Male implements HusbandRole, DaddyRole, EmployeeRole{
     public void sayLoveEvery() {
         System.out.println("우리 가족 사랑합니다");
 
+
+    }
+
+
+    //////생성자 추가
+
+    public Male(String name) {
+        this.name = name;
     }
 }
