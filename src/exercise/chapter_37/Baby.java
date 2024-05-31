@@ -7,4 +7,8 @@ public class Baby {
     public String getName() {
         return name;
     }
+
+    public Baby(String name) {
+        this.name = name;
+    }
 }
