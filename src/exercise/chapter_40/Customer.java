@@ -1,8 +1,13 @@
-package exercise.chapter_34;
+package exercise.chapter_40;
 
 public class Customer {
     //속성
     static int numberID = 1; //고객ID 숫자 순차생성>static
+
+    //static 함수 선언 가능, 함수가 실행된다 로 이해
+    static {
+        System.out.println("Customer 클래스가 로딩 됩니다.");
+    }
 
     protected String customerID; //고객ID
     protected String customerName; //고객이름

@@ -1,4 +1,4 @@
-package exercise.chapter_34;
+package exercise.chapter_40;
 
 public class VIPCustomer extends Customer {
 
@@ -13,6 +13,10 @@ public class VIPCustomer extends Customer {
     //고객등급
     //보너스 포인트
     //적립비율
+
+    static {
+        System.out.println("VIP 클래스가 로딩 됩니다.");
+    }
 
     private String chargeVIP; //VIP 담당 직원 ID
     private double discountRate; //구매 할인율
