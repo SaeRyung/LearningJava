@@ -9,11 +9,9 @@ public class TryCatchTestCloseTest {
     public static void main(String[] args) throws InterruptedException, IOException {
 
         System.out.println("///////메인 메소드 실행//////");
-        FileInputStream fs = null;
 
-
-        try {
-            fs = new FileInputStream("src/exercise/chapter_51/test.txt");
+//
+        try (FileInputStream fs = new FileInputStream("src/exercise/chapter_51/test.txt")) {
 
             int i;
             while ((i=fs.read()) != -1){
@@ -35,10 +33,8 @@ public class TryCatchTestCloseTest {
             e.printStackTrace();
         }catch (ArithmeticException e){
             System.out.println("0으로 나눌 수 없다.");
-        } finally {
-            fs.close();
-
         }
+
 
         System.out.println("///////메인 메소드 종료//////");
 
