@@ -23,19 +23,27 @@ public class StringUtils {
         return sb.toString();
     }
 
-    // 3. 주어진 문자열에서 특정 문자의 개수 세기
-    public static int countChar(String str, char targetChar){
-        int count = 0;
-        for(int i=0; i<str.length(); i++){
-            if(str.charAt(i) == targetChar){
-                count++;
+    //정적클래스
+    public static class CharChecker{
+        // 3. 주어진 문자열에서 특정 문자의 개수 세기
+        public static int countChar(String str,char targetChar){
+            int count = 0;
+            for(int i=0; i<str.length(); i++){
+                if(str.charAt(i) == targetChar){
+                    count++;
+                }
             }
+            return count;
         }
-        return count;
+        // 4. 주어진 문자열에 특정 문자가 있는지 확인
+        public static boolean containsChar(String str, char targetChar){
+            return countChar(str, targetChar) >= 1;
+        }
+
     }
 
-    // 4. 주어진 문자열에 특정 문자가 있는지 확인
-    public static boolean containsChar(String str, char targetChar){
-        return countChar(str, targetChar) >= 1;
-    }
+
+
+
+
 }
